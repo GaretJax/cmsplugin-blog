@@ -1,3 +1,4 @@
+import re
 from django.utils.translation import get_language, ugettext_lazy as _
 from django.conf import settings
 
