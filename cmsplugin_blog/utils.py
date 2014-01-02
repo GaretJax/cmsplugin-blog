@@ -1,5 +1,5 @@
 from django.utils.translation import get_language, ugettext_lazy as _
-from cms import settings
+from django.conf import settings
 
 
 HAS_LANG_PREFIX_RE = re.compile(r"^/(%s)/.*" % "|".join([re.escape(lang[0]) for lang in settings.CMS_LANGUAGES]))
