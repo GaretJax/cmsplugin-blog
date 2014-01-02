@@ -14,13 +14,12 @@ from django.http import Http404
 from django.shortcuts import redirect
 from django.utils.translation import ugettext_lazy as _
 
-from cms.middleware.multilingual import has_lang_prefix
 from menus.utils import set_language_changer
 
 from simple_translation.middleware import filter_queryset_language
 from simple_translation.utils import get_translation_filter, get_translation_filter_language
 from cmsplugin_blog.models import Entry
-from cmsplugin_blog.utils import is_multilingual
+from cmsplugin_blog.utils import is_multilingual, has_lang_prefix
 
 
 class Redirect(Exception):
